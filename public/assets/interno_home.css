@@ -1,0 +1,129 @@
+/* Estilos para a página home */
+/* Path: public/assets/css/interno_home.css */
+
+/* ============================== CORES ============================== */
+:root {
+    --color-white: #FFFFFF;
+    --color-purple: #6A1B9A;
+    --color-blue: #0D47A1;
+    --color-yellow: #F2B90C;
+}
+
+/* ============================== FONTES ============================== */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('/assets/fonts/Montserrat-Thin.ttf');
+}
+
+/* ==============================  ESTILO DO BODY ============================== */
+
+body {
+    /*imagem preencha toda a tela*/
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/img/backClean.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+    /* background-color: red; */
+    padding-right: 2vw;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.4rem;
+}
+
+header nav ul a:hover{
+    color: var(--color-yellow);
+}
+
+.content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30vh;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.content .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .title .text{
+    color: var(--color-white);
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+
+.content .start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+
+}
+
+.content .start a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: Montserrat-Bold;
+    font-size: 2rem;
+}
+
+.content .start a:hover{
+    color: var(--color-yellow);
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background-color: var(--color-purple); */
+    color: var(--color-white);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+footer a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+footer a:hover{
+    color: var(--color-yellow);
+}
